@@ -5,7 +5,7 @@ const bodyParser = require("body-parser")
 const app = express()
 app.use(bodyParser.json())
 
-app.post("/ml-predict", (req, res) => {
+app.post("/analyze-sentiment", (req, res) => {
     console.log("calling ML api ...")
     const itext = req.body.text
     axios.post("http://127.0.0.1:5000/predict", {

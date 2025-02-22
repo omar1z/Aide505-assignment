@@ -19,11 +19,11 @@ def predict():
         prediction = analyzer.polarity_scores(text)
         if(prediction['neg'] >= 0.5):
             # return jsonify({"prediction": f"{prediction}"})
-            return jsonify({'prediction': 'negative'})
+            return jsonify({'sentiment': 'negative'})
         elif(prediction['pos'] >= 0.5):
-            return jsonify({'prediction': 'positive'})
+            return jsonify({'sentiment': 'positive'})
         else:
-            return jsonify({'prediction': 'neutral'})
+            return jsonify({'sentiment': 'neutral'})
     except Exception as e:
         return jsonify({"error": str(e)}), 400
     
