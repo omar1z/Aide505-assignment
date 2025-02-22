@@ -15,3 +15,7 @@ app.post("/ml-predict", (req, res) => {
         res.send(mlRes.data)
     }).catch(error => console.error(error))
 })
+
+app.listen(4000, () => {
+    console.log("running on port 4000")
+})
