@@ -9,12 +9,12 @@ app.get('/', (req, res) => {
     res.send(`
         <html>
             <body>
-                <h1>Write a sentence to test its sentiment :) </h1>
+                <h1>Write a sentence to analyze its sentiment :) </h1>
                 <form action="/analyze-sentiment" method="POST">
                     <label for="text">Sentence:</label>
-                    <input type="text" id="text" name="text" required> <!-- Corrected name -->
+                    <input type="text" id="text" name="text" required style="width: 400px; height:30px"> <!-- Corrected name -->
                     <br>
-                    <button type="submit">Submit</button>
+                    <button type="submit">Analyze</button>
                 </form>
             </body>
         </html>
