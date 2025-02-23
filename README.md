@@ -9,8 +9,8 @@ in which the server is getting the user's request and sending it to the port of 
 **3. Objective:**  
 the objective of this little exercise is to build a simple Flask API that serves a machine learning model.  
 
-*How to run the file :*  
-*1- pull the github repo on your local machine and install the project*  
+*How to run the project :*  
+*1- pull the github repository on your local machine and install the project*  
 *2- in the terminal run **app.py** to run the api route*  
 *3- and write in the terminal **nodemon .** or **node index.js** to run the express server*  
 *4- open local port 4000 to see the simple html user interface and interact with it*  
